@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url('../font/IRANSansWeb.ttf');
+}
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body {
+    font-family: "IRANSansWeb";
+    background-color: #fbfbfb;
+    /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-family: "IRANSansWeb";
+}
+
+header {
+    width: 100%;
+    height: 985px;
+    margin: 0;
+}
+
+header nav ul {
+    float: right;
+    padding: 50px;
+    margin-right: 200px;
+}
+
+header nav ul li {
+    float: right;
+    list-style-type: none;
+    margin-left: 20px;
+    text-align: center;
+    width: 110px;
+    height: 38px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background-image: linear-gradient(80deg, #c84375 0%, #96358e 100%);
+}
+
+header nav ul li a {
+    color: #000;
+    margin: 2px auto;
+    width: 106px !important;
+    display: block;
+    padding: 5px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #fbfbfb;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+}
+
+header nav #logoNav {
+    width: 54px;
+    height: 70px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+
+main #bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    width: 100%;
+    height: 800px;
+    z-index: -10;
+    opacity: 0.7;
+}
+
+main #bg2 {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    background-image: url('../img/bg2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    width: 100%;
+    height: 950px;
+    z-index: -10;
+    opacity: 0.7;
+}
+
+main #bg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    width: 100%;
+    height: 800px;
+    z-index: -10;
+    opacity: 0.7;
+}
+
+main {
+    width: 100%;
+}
+
+main #window {
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 7px 18.72px 5.28px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 735px;
+    top: 174px;
+    width: 1543px;
+    height: 751px;
+    z-index: 51;
+    border-radius: 25px;
+}
+main #window #header{
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    -webkit-box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44);
+box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44);
+}
+main #window #header > div{
+   margin-right: 130px;
+   margin-left: 30px;
+   margin-top: 20px;
+}
+main #window #header #search #inputBox{
+    display: inline-block;
+    position: relative;
+    width: 190px;
+}
+main #window #header #search #inputBox #binput{
+    width: 190px;
+    height: 28px;
+    border-radius: 20px;
+    background-image: linear-gradient(80deg, #c84375 0%, #96358e 100%);
+}
+main #window #header #search #inputBox input{
+    width: 188px;
+    height: 26px;
+    margin: 1px 1px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+    box-sizing: border-box;
+    direction: ltr !important;
+}
+main #window #header #search #inputBox input::placeholder{
+    padding-left: 15px;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1.5px;
+}
+main #window #header #search #inputBox input::placeholder::first-letter{
+    text-transform: uppercase;
+}
+main #window #header #search #inputBox img{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    /* left: auto; */
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main #window > div > div {
+    float: left;
+}
+
+main #window #icons{
+    height: 40px;
+    float: left;
+}
+main #window #icons img{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 15px;  
+}
+main #window #title #logo{
+    width: 30px;
+    height: 43px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+main #window #title p{
+    font-size: 20px;
+    display: inline;
+    line-height: 43px;
+    margin-left: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+main #window #title p span{
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(80deg, #c84375 0%, #96358e 100%); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(80deg, #c84375 0%, #96358e 100%); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(80deg, #c84375 0%, #96358e 100%); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(80deg, #c84375 0%, #96358e 100%); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(80deg, #c84375 0%, #96358e 100%); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+main #window #main {
+    background-image: url("../img/window.png");
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    width: 1185px;
+    height: 628px;
+    z-index: -20;
+  }
+  
