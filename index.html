@@ -12,9 +12,11 @@
     <meta name="author" content="mohammadrsul taremi" />
     <meta name="copyright" content="Copyright owner" />
 
+    <link rel="icon" href="img/logosq_aHS_icon.ico" type="image/x-icon">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css"> -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
     </style>
@@ -23,57 +25,40 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">خانه</a>
-                </li>
-                <li>
-                    <a href="">لورم</a>
-                </li>
-                <li>
-                    <a href="">درباره ما</a>
-                </li>
-                <li>
-                    <a href="">ارتباط با ما</a>
-                </li>
-                <li>
-                    <a href="">تماس با ما</a>
-                </li>
-            </ul>
-            <div id="logoNav">
-
+        <nav id="desktop">
+            <div>
+                <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">لورم</a></li>
+                    <li><a href="#">اپیسوم</a></li>
+                    <li><a href="#">ارتباط با ما</a></li>
+                    <li><a href="#">در باره ما</a></li>
+                    <li id="lastli">
+                        <div>
+                            <span id="searchlogo" class="uk-form-icon" uk-icon="icon: search"></span>
+                            <input id="inputsearch" type="text" placeholder="search...">
+                        </div>
+                    </li>
+                </ul>
             </div>
+            <div id="logo"></div>
+
         </nav>
     </header>
     <main>
-        <div id="bg1"></div>
-        <div id="bg2"></div>
-        <div id="bg3"></div>
-        <section id="window">
-            <div id="header">
-                <div id="search">
-                    <div id="inputBox">
-                        <img src="/img/svg/search.svg">
-                        <div id="binput"><input type="text" placeholder="search..."></div>
-                            
-                    </div>
-                </div>
-                <div id="title">
-                    <div id="logo"></div>
-                    <p>
-                        <span>s</span>mart
-                        <span>m</span>edical</p>
-                </div>
-                <div id="icons">
-                    <img src="/img/svg/puzzel.svg">
-                    <img src="/img/svg/user.svg">
-                    <img src="/img/svg/mail.svg">
-                </div>
+        <section id="part1">
+            <div id="bg">
+                <img src="img/bg1.png" alt="">
+                <img src="img/bg2.png" alt="">
+                <img src="img/bg3.png" alt="">
             </div>
-            <div id="main">
+            <div id="textbox">
+                <h3 class="tcolor">لورم اپیسوم</h3>
+                <p class="tcolor">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی</p>
+                <button class="bgcolor">See more ...</button>
             </div>
         </section>
+        <section></section>
         <section></section>
         <section></section>
         <section></section>
@@ -139,9 +124,10 @@
     <!-- Optional JavaScript -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-    <!-- <script src="node_modules/uikit/dist/js/uikit.min.js"></script> -->
+    <script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
