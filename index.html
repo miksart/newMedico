@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en" dir="rtl">
-
+  <!-- =======================================================
+    Theme URL: https://github.com/miksart/newMedico
+    Author: mohammad rasul taremi www.mrtaremi.ir
+    License: http://www.mrtaremi.ir/
+  ======================================================= -->
 <head>
     <title>medico</title>
     <!-- Required meta tags -->
@@ -9,7 +13,7 @@
     <meta name="description" content="Test project for Smart Medico.">
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="company, medico,smart medico,smartmedico,SmartMedico " />
-    <meta name="author" content="mohammadrsul taremi" />
+    <meta name="author" content="mohammad rasul taremi" />
     <meta name="copyright" content="Copyright owner" />
 
     <link rel="icon" href="img/logosq_aHS_icon.ico" type="image/x-icon">
@@ -28,14 +32,24 @@
         <nav id="desktop">
             <div>
                 <ul>
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">لورم</a></li>
-                    <li><a href="#">اپیسوم</a></li>
-                    <li><a href="#">ارتباط با ما</a></li>
-                    <li><a href="#">در باره ما</a></li>
+                    <li>
+                        <a href="#">خانه</a>
+                    </li>
+                    <li>
+                        <a href="#">لورم</a>
+                    </li>
+                    <li>
+                        <a href="#">اپیسوم</a>
+                    </li>
+                    <li>
+                        <a href="#">ارتباط با ما</a>
+                    </li>
+                    <li>
+                        <a href="#">در باره ما</a>
+                    </li>
                     <li id="lastli">
                         <div>
-                            <span id="searchlogo" class="uk-form-icon" uk-icon="icon: search"></span>
+                                <span class="uk-icon uk-icon-image" style="background-image: url(img/svg/search.svg);"></span>
                             <input id="inputsearch" type="text" placeholder="search...">
                         </div>
                     </li>
@@ -48,17 +62,98 @@
     <main>
         <section id="part1">
             <div id="bg">
-                <img src="img/bg1.png" alt="">
-                <img src="img/bg2.png" alt="">
-                <img src="img/bg3.png" alt="">
+                <div class="bg"></div>
+                <div class="bg"></div>
+                <div class="bg"></div>
             </div>
             <div id="textbox">
                 <h3 class="tcolor">لورم اپیسوم</h3>
-                <p class="tcolor">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی</p>
-                <button class="bgcolor">See more ...</button>
+                <p class="tcolor">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                    بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                    متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی</p>
+                <button class="">See more ...</button>
+                <a href="#part2" uk-scroll>
+                    <div id="goto">
+                        <span uk-icon="icon: chevron-down;ratio: 1.2"></span>
+                    </div>
+
+                </a>
+            </div>
+            <div id="slider">
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay-interval: 1500;autoplay: true;animation: scale">
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="img/window.png" alt="" uk-cover>
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover>
+                            <div class="uk-position-center uk-position-small uk-text-center">
+                                <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                                <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                </div>
             </div>
         </section>
-        <section></section>
+        <section id="part2">
+            <br>
+            <br>
+            <div id="bg">
+                    <div class="bg"></div>
+                    <div class="bg"></div>
+                    <div class="bg"></div>
+                    <div class="bg"></div>
+                    <div class="bg"></div>
+                    <div id="slider">
+                            <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="min-height: 540; max-height: 540; animation: push;autoplay: true;autoplay-interval: 1500">
+
+                                    <ul class="uk-slideshow-items">
+                                        <li>
+                                            <img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
+                                        </li>
+                                        <li>
+                                            <img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+                                        </li>
+                                        <li>
+                                            <img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover>
+                                        </li>
+                                    </ul>
+                                
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                                
+                                </div>
+                    </div>
+            </div>
+            <div id="textmark">
+                    <h3>About</h3>
+            </div>
+            <div id="textbox">
+                <h4>لورم متن ساختگی</h4>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                    
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
         <section></section>
         <section></section>
         <section></section>

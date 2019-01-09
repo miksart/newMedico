@@ -1,3 +1,11 @@
+/* =======================================================
+    Theme URL: https://github.com/miksart/newMedico
+    Author: mohammad rasul taremi www.mrtaremi.ir
+    License: http://www.mrtaremi.ir/
+   ======================================================= */
+
+/*//////////////////////////////////////////////////*/
+/* general */
 @font-face {
     font-family: "IRANSansWeb";
     src: url('../font/IRANSansWeb.ttf');
@@ -11,20 +19,16 @@
 .tcolor{
     color: #b31863;
 }
-.bgcolor{
-    background-color: #b31863;
-}
 body {
     font-family: "IRANSansWeb";
     background-color: #fbfbfb;
     /* position: relative; */
     /* overflow-x: hidden; */
 }
-
 h1,h2,h3,h4,h5,h6,h7 {
     font-family: "IRANSansWeb";
 }
-
+/*//////////////////////////////////////////////////*/
 header {
     width: 100%;
     height: 50px;
@@ -32,7 +36,6 @@ header {
     top: 0;
     right: 0;
 }
-
 header #desktop{
     padding-top: 30px;
     padding-right: 120px; 
@@ -93,11 +96,13 @@ header #desktop ul li:last-child div input {
     background-color: #fbfbfb;
     display: none;
     transition: 500ms;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
     /* padding: 1px; */
 }
 header #desktop ul li:last-child div input::placeholder{
     letter-spacing: 3px;
-    padding-left: 3px;
+    text-align: center;
     font-family: 'Libre Baskerville', serif;
 }
 header #desktop ul li:last-child div span {
@@ -112,8 +117,6 @@ header #desktop ul li:last-child div span {
     z-index: 200;
     /* padding: 1px; */
 }
-
-
 header #desktop #logo{
     background-image: url('../img/logo.png');
     background-repeat: no-repeat;
@@ -125,15 +128,11 @@ header #desktop #logo{
     left: 10px;
  
 }
-
 /*//////////////////////////////////////////////////*/
-
-
 main #part1{
-    position: relative;
+    /* position: relative; */
+    height: 650px;
 }
-
-
 main #part1 > #textbox{
     position: absolute;
     width: 300px;
@@ -146,7 +145,8 @@ main #part1 > #textbox button{
     background-color: rgb(89, 28, 100);
     box-shadow: 0px 0px 12.64px 3.36px rgba(0, 0, 0, 0.32);
     width: 235px;
-    height: 57px;
+    height: 50px;
+    line-height: 50px;
     border: none;
     color: #fff;
     direction: ltr;
@@ -154,173 +154,158 @@ main #part1 > #textbox button{
     font-size: 15px;
     letter-spacing: 2px;
   }
-  
-
-main #part1 #bg {
-    /* position: absolute; */
-}
-
-main #part1 #bg > img {
+main #part1 > #textbox #goto{
     position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(89, 28, 100);
+
+}   
+main #part1 > #textbox #goto span{
+    line-height: 30px;
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}   
+main #part1 #bg > div {
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 900px;
+    background-size: 100% auto;
 }
-main #part1 #bg > img:nth-child(1) {
+main #part1 #bg > div:nth-child(1) {
     z-index: 10;
+    top: 0;
+    background-image: url("../img/bg1.png");
+    background-size: contain;
 }
-main #part1 #bg > img:nth-child(2) {
+main #part1 #bg > div:nth-child(2) {
     z-index: 10;
+    background-image: url("../img/bg2.png");
+    background-size: contain;
     top: 73px;
 }
-main #part1 #bg > img:nth-child(3) {
+main #part1 #bg > div:nth-child(3) {
     z-index: 10;
+    background-image: url("../img/bg3.png");
+    background-size: contain;
 }
-
-main #bg2 {
-    /* position: absolute;
-    top: 35px;
-    left: 0px;
-    background-image: url('../img/bg2.png');
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
-    width: 100%;
-    height: 950px;
-    z-index: -10;
-    opacity: 0.7; */
-}
-
-main #bg3 {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('../img/bg3.png');
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
-    width: 100%;
-    height: 800px;
-    z-index: -10;
-    opacity: 0.7; */
-}
-
-main {
-    /* width: 100%; */
-}
-
-main #window {
-    /* border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 7px 18.72px 5.28px rgba(0, 0, 0, 0.2);
+main #part1 #slider {
     position: absolute;
-    left: 735px;
-    top: 174px;
-    width: 1543px;
-    height: 751px;
-    z-index: 51;
-    border-radius: 25px; */
+    top: 120px;
+    right: -15px;
+    z-index: 90;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-box-shadow: -8px 16px 37px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 16px 37px -9px rgba(0,0,0,0.75);
+box-shadow: -8px 16px 37px -9px rgba(0,0,0,0.75);
 }
-main #window #header{
-    /* width: 100%;
-    height: 80px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    -webkit-box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44);
--moz-box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44);
-box-shadow: 0px 9px 22px 0px rgba(0,0,0,0.44); */
+
+/*//////////////////////////////////////////////////*/
+main #part2{
+    /* position: relative; */
+    height: 650px;
 }
-main #window #header > div{
-   /* margin-right: 130px;
-   margin-left: 30px;
-   margin-top: 20px; */
-}
-main #window #header #search #inputBox{
-    /* display: inline-block;
+main #part2 #bg{
     position: relative;
-    width: 190px; */
 }
-main #window #header #search #inputBox #binput{
-    /* width: 190px;
-    height: 28px;
-    border-radius: 20px;
-    background-image: linear-gradient(80deg, #c84375 0%, #96358e 100%); */
-}
-main #window #header #search #inputBox input{
-    /* width: 188px;
-    height: 26px;
-    margin: 1px 1px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.297);
-    box-sizing: border-box;
-    direction: ltr !important; */
-}
-main #window #header #search #inputBox input::placeholder{
-    /* padding-left: 15px;
-    font-family: 'Libre Baskerville', serif;
-    letter-spacing: 1.5px; */
-}
-main #window #header #search #inputBox input::placeholder::first-letter{
-    /* text-transform: uppercase; */
-}
-main #window #header #search #inputBox img{
-    /* position: absolute;
-    top: 3px;
-    right: 8px; */
-    /* left: auto; */
-    /* width: 20px;
-    height: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; */
-    
-}
-main #window > div > div {
-    /* float: left; */
-}
-
-main #window #icons{
-    /* height: 40px;
-    float: left; */
-}
-main #window #icons img{
-    /* margin-top: 10px;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin-left: 15px;   */
-}
-main #window #title #logo{
-    /* width: 30px;
-    height: 43px;
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    float: left; */
-}
-main #window #title p{
-    /* font-size: 20px;
-    display: inline;
-    line-height: 43px;
-    margin-left: 10px;
-    font-family: 'Libre Baskerville', serif; */
-}
-
-main #window #title p span{
-    /* text-transform: uppercase;
-    background-image: -webkit-linear-gradient(80deg, #c84375 0%, #96358e 100%);
-    background-image:    -moz-linear-gradient(80deg, #c84375 0%, #96358e 100%);
-    background-image:     -ms-linear-gradient(80deg, #c84375 0%, #96358e 100%);
-    background-image:      -o-linear-gradient(80deg, #c84375 0%, #96358e 100%);
-    background-image:         linear-gradient(80deg, #c84375 0%, #96358e 100%);
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;*/
-}
-
-main #window #main {
-    /* background-image: url("../img/window.png");
+main #part2 #bg > div {
     position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    height: 900px;
+    background-size: 100% auto;
+}
+main #part2 #bg > div:nth-child(1) {
+    z-index: 20;
+    /* top: 0; */
+    background-image: url("../img/bg4.png");
+    background-size: contain;
+}
+main #part2 #bg > div:nth-child(2) {
+    z-index: 25;
+    bottom: -923px;
     left: 0px;
-    top: 80px;
-    width: 1185px;
-    height: 628px;
-    z-index: -20; */
-  }
-  
+    filter: grayscale(90%);
+    opacity: 0.5;
+    background-image: url("../img/bg5.png");
+    background-size: contain;
+}
+main #part2 #bg > div:nth-child(3) {
+    z-index: 35;
+    bottom: -760px;
+    left: 160px;
+    background-image: url("../img/bg6.png");
+    background-size: 300px 540px;
+    width: 300px;
+    height: 540px;
+}
+main #part2 #bg > div:nth-child(4) {
+    z-index: 25;
+    top: -50px;
+    left: 20px;
+    background-image: url("../img/bg7.png");
+    background-size: 420px 380px;
+    width: 420px;
+    height: 380px;
+    /* transform: rotate(-20deg); */
+
+}
+main #part2 #bg > div:nth-child(5) {
+    z-index: 15;
+    top: -20px;
+    right: 35px;
+    background-image: url("../img/bg8.png");
+    background-size: 350px 150px;
+    width: 350px;
+    height: 150px;
+}
+main #part2 #bg > div:nth-child(6) {
+    z-index: 30;
+    bottom: -760px;
+    left: 163px;
+    /* background-size: 300px 540px; */
+    width: 290px;
+    height: 540px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
+
+
+main #part2 #textmark{
+    position: relative;
+    z-index: 21;
+    right: -125px;
+    bottom: -600px;
+    font-size: 140px;
+    color: #e9e9e9;
+    /* -webkit-text-shadow: 0px 0px 39px 5px rgba(82,82,82,1);
+    -moz-text-shadow: 0px 0px 39px 5px rgba(82,82,82,1); */
+    text-shadow: 0px 0px 20px rgba(26, 26, 29, 0.29);
+    /* text-shadow:  */
+    transform: rotate(-90deg);
+    font-family: 'Libre Baskerville', serif;
+}
+main #part2 #textbox{
+    position: relative;
+    z-index: 210;
+    right: 150px;
+    bottom: 0px;
+    font-size: 12px;
+    width: 30%;
+}
+
